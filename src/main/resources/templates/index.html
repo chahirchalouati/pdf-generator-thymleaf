@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>PDF Template</title>
+    <style th:inline="css">
+        [${cssContent}]
+    </style>
+</head>
+<body>
+<h1 th:id="title"  th:text="${title}">Default Title</h1>
+<p th:text="${content}">Default Content</p>
+</body>
+</html>

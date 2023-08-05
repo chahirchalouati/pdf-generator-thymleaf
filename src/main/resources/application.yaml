@@ -1,0 +1,18 @@
+spring:
+  data:
+    mongodb:
+      auto-index-creation: true
+      host: localhost
+      port: 27017
+      database: pdf_dev
+      authentication-database: admin
+  web:
+    resources:
+      static-locations: classpath:/static/
+  main:
+    allow-bean-definition-overriding: true
+
+logging:
+  level:
+    org:
+      thymeleaf: trace
